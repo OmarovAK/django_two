@@ -1,0 +1,13 @@
+{% extends 'recipes/base.html' %}
+
+{% block main %}
+<h1>Список блюд</h1>
+<ol>
+    {% for k in data %}
+    <li><a href="{{ k }}">{{k}}</a></li>
+    {% endfor  %}
+</ol>
+
+{% endblock main %}
+
+
